@@ -1,0 +1,25 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 text-center">
+      Proyecto Actual: Lorem Ipsum
+    </div>
+  </div>
+
+  <div class="row" *ngFor="let project of projects">
+    <div class="col-12">
+      {{project.nombre}} <br>
+      {{project.fecha}} {{project.lugar}} - {{project.trimestre}}
+    </div>
+    
+    <div class="col-4 ">
+      <div class="col-12" style="border:1px solid grey; height:20vw">
+        <img width=100% src="{{project.image}}" /> 
+      </div>
+    </div>
+    
+    <div class="col-8">
+        {{project.descripcion}} 
+    </div>
+  </div>
+
+</div>
