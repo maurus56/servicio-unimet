@@ -1,25 +1,64 @@
 <div class="container">
-  <div class="row">
-    <div class="col-12 text-center">
-      Proyecto Actual: Lorem Ipsum
-    </div>
-  </div>
-
-  <div class="row" *ngFor="let project of projects">
-    <div class="col-12">
-      {{project.nombre}} <br>
-      {{project.fecha}} {{project.lugar}} - {{project.trimestre}}
-    </div>
-    
-    <div class="col-4 ">
-      <div class="col-12" style="border:1px solid grey; height:20vw">
-        <img width=100% src="{{project.image}}" /> 
+    <div class="row">
+      <div class="col-12 text-center" style="padding: 2pc; margin-bottom: 1vh; margin-top: 1vh">
+        <h4 style="font-size: 5vh; color: whitesmoke;">
+          Proyectos Actuales
+        </h4>
+        <hr style="background-color: whitesmoke; margin-top: 4vh; width: 50vw">
       </div>
     </div>
-    
-    <div class="col-8">
-        {{project.descripcion}} 
-    </div>
   </div>
 
-</div>
+<!--First project-->
+
+  <div class="container-fluid" style="width: 80vw; background-color: whitesmoke; border-radius: 4px">
+      <div class="row">
+        <div class="col-4">
+            <div class="col-12" style="margin: 1pc;">
+                <h5>Parque La Mansión - Chacao</h5>
+                <h5>Trimestre 1718-03</h5>
+              </div>
+              
+              <div class="col-12">
+                  <img class="shadow-lg border border-dark" src="../../assets/images/ParqueLaMansion.jpeg" style="height: 38vh; margin-bottom: 5vh; 
+                  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+                </div>
+        </div>
+        <div class="col-8">
+            <div class="container">
+                <h3 style="margin-bottom: 5vh; margin-top: 3vh">Acerca del proyecto:</h3>
+                <h5 style="margin-bottom: 4vh"><i>ESPACIOS DE USO PÚBLICO: PROPUESTA DE UN PLAN DE MANEJO PARA EL PARQUE LA MANSIÓN</i></h5>
+                <p style="font-size: 2vh">
+                    El PROYECTO REDES desarrolla un Plan que como instrumento rector propone definir las
+                    acciones, actividades y lineamientos básicos para el uso del parque con el fin de atender las
+                    solicitudes elevadas por los actores de la comunidad considerando las densidades e
+                    intensidades de uso como condicionantes de la propuesta, asi como las disposiciones legales y
+                    reglamentarias aplicables. El objetivo del Plan esta orientado a impulsar acciones de
+                    corresponsabilidad en el uso y defensa del parque como un espacio público que comprometa
+                    tanto a las comunidades vecinas como a las autoridades del municipio Chacao.
+                  </p>
+              </div>
+              <div class="container">
+                  <div class="gallery" style="margin-right: 2vw; margin-bottom: 5vh">
+                        <img class="zoom" src="../../assets/images/parque1.jpg" width="300" height="200">
+                      <div class="desc">Las afueras del parque</div>
+                    </div>
+                    
+                    <div class="gallery" style="margin-right: 2vw">
+                        <img class="zoom" src="../../assets/images/parque2.jpg" width="300" height="200">
+                      <div class="desc">El área de diversión para niños</div>
+                    </div>
+                    
+                    <div class="gallery" style="margin-right: 2vw">
+                        <img class="zoom" src="../../assets/images/parque3.JPG" width="300" height="200">
+                      <div class="desc">El área de diversión para las mascotas</div>
+                    </div>
+                    
+                    <div class="gallery">
+                        <img class="zoom" src="../../assets/images/parque4.JPG" width="300" height="200">
+                      <div class="desc">Entretenimiento familiar</div>
+                    </div>
+              </div>
+          </div>
+      </div>
+    </div>
