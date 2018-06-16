@@ -1,0 +1,40 @@
+.actual-project {
+    background-color: whitesmoke;
+    padding: 2pc;
+    border-radius: 4px;
+    margin-left: 1pc;
+    margin-bottom: 1pc;
+    margin-right: 1pc;
+    margin-top: 5pc;
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5);
+}
+
+.zoom {
+    transition: transform .2s;
+}
