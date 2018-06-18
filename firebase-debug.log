@@ -1,0 +1,18 @@
+[debug] [2018-06-18T20:06:18.627Z] ----------------------------------------------------------------------
+[debug] [2018-06-18T20:06:18.629Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Jinvernon\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-06-18T20:06:18.630Z] CLI Version:   3.18.4
+[debug] [2018-06-18T20:06:18.630Z] Platform:      win32
+[debug] [2018-06-18T20:06:18.630Z] Node Version:  v8.9.4
+[debug] [2018-06-18T20:06:18.630Z] Time:          Mon Jun 18 2018 16:06:18 GMT-0400 (Venezuela Standard Time)
+[debug] [2018-06-18T20:06:18.630Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-06-18T20:06:18.641Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-06-18T20:06:18.642Z] > authorizing via signed-in user
+[debug] [2018-06-18T20:06:18.644Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/redes-de-infra-unimet  
+  
+ Mon Jun 18 2018 16:06:18 GMT-0400 (Venezuela Standard Time)
+[debug] [2018-06-18T20:06:19.531Z] <<< HTTP RESPONSE 200
+[debug] [2018-06-18T20:06:19.532Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/redes-de-infra-unimet/tokens  
+  
+ Mon Jun 18 2018 16:06:19 GMT-0400 (Venezuela Standard Time)
+[debug] [2018-06-18T20:06:20.379Z] <<< HTTP RESPONSE 200
