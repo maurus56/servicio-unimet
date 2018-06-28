@@ -13,6 +13,7 @@ import { ActualProjectsComponent } from './actual-projects/actual-projects.compo
 import { PastProjectsComponent } from './past-projects/past-projects.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
+import { ImageModalComponent } from './image-modal/image-modal.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
     ActualProjectsComponent,
     PastProjectsComponent,
     ContactUsComponent,
-    WhoWeAreComponent
+    WhoWeAreComponent,
+    ImageModalComponent
   ],
   imports: [
     AppRouting,
