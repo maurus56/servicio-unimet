@@ -11,24 +11,24 @@
 
 <!--First project-->
 
-<div class="container-fluid p-3" style="width: 80vw; background-color: whitesmoke; border-radius: 4px">
+<div class="container-fluid p-3 mb-5" *ngFor="let project of projects" style="width: 80vw; background-color: whitesmoke; border-radius: 4px">
   <div class="row">
     <div class="col-12 col-md-4">
       <div class="col-12" style="margin: 1pc;">
-        <h5>Visita a la U.E. Colegio Manuel Piar </h5>
-        <h5>Trimestre 1718-02</h5>
+        <h5>  {{ project.name }}  </h5>
+        <h5>  {{ project.period }}</h5>
       </div>
 
       <div class="col-12">
-        <img class="shadow-lg border border-dark project-image" src="../../assets/images/Colegio1.jpg">
+        <img class="shadow-lg border border-dark project-image" [src]="project.portrate">
       </div>
+
     </div>
     <div class="col-12 col-md-8">
       <div class="container">
         <h3 style="margin-bottom: 5vh; margin-top: 10vh">Acerca del proyecto:</h3>
         <h5 style="margin-bottom: 4vh">
-          Se realizó una visita a la Unidad Educativa Colegio Manuel Piar para la evaluación de las condiciones en las que
-            se encontraban la infraestructura del lugar, para así poder realizar un diagnóstico acerca de sus necesidades.
+          {{ project.description }}
         </h5>
       </div>
     </div>
@@ -36,391 +36,17 @@
 
 <!--GALERÍA-->
 
-<div class="col-lg-12 col-md-8">
+<div class="col-12">
     <div class="gallery-container">
-      <img class="gallery-item" src="../../assets/images/Colegio1.jpg" style="margin-left: 0 !important" data-toggle="modal" data-target="#Colegio1Modal">
-      <!--Modal Colegio1-->
-        <div class="modal fade" id="Colegio1Modal" aria-hidden="true" style="background-color: rgba(0, 0, 0, 0.678)">
-          <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Visita a la U.E. Colegio Manuel Piar</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body text-center">
-                <img src="../../assets/images/Colegio1.jpg">
-              </div>
-              <div class="modal-footer">
-              </div>
-            </div>
-          </div>
-        </div>
-      <img class="gallery-item" src="../../assets/images/Colegio2.jpg" data-toggle="modal" data-target="#Colegio2Modal">
-      <!--Modal Colegio2-->
-        <div class="modal fade" id="Colegio2Modal" aria-hidden="true" style="background-color: rgba(0, 0, 0, 0.678)">
-          <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Visita a la U.E. Colegio Manuel Piar</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body text-center">
-                <img src="../../assets/images/Colegio2.jpg">
-              </div>
-              <div class="modal-footer">
-              </div>
-            </div>
-          </div>
-        </div>
-      <img class="gallery-item" src="../../assets/images/Colegio3.jpg" data-toggle="modal" data-target="#Colegio3Modal">
-      <!--Modal Colegio3-->
-        <div class="modal fade" id="Colegio3Modal" aria-hidden="true" style="background-color: rgba(0, 0, 0, 0.678)">
-          <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Visita a la U.E. Colegio Manuel Piar</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body text-center">
-                <img src="../../assets/images/Colegio3.jpg">
-              </div>
-              <div class="modal-footer">
-              </div>
-            </div>
-          </div>
-        </div>
-      <img class="gallery-item" src="../../assets/images/Colegio5.jpg" data-toggle="modal" data-target="#Colegio5Modal">
-      <!--Modal Colegio5 FIX-->
-        <div class="modal fade" id="Colegio5Modal" aria-hidden="true" style="background-color: rgba(0, 0, 0, 0.678)">
-          <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Visita a la U.E. Colegio Manuel Piar</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body text-center">
-                <img src="../../assets/images/Colegio5.jpg">
-              </div>
-              <div class="modal-footer">
-              </div>
-            </div>
-          </div>
-        </div>
-      <img class="gallery-item" src="../../assets/images/Colegio6.jpg" data-toggle="modal" data-target="#Colegio6Modal">
-      <!--Modal Colegio6 FIX-->
-        <div class="modal fade" id="Colegio6Modal" aria-hidden="true" style="background-color: rgba(0, 0, 0, 0.678)">
-          <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Visita a la U.E. Colegio Manuel Piar</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body text-center">
-                <img src="../../assets/images/Colegio6.jpg">
-              </div>
-              <div class="modal-footer">
-              </div>
-            </div>
-          </div>
-        </div>
-      <img class="gallery-item" src="../../assets/images/Colegio7.jpg" data-toggle="modal" data-target="#Colegio7Modal">
-      <!--Modal Colegio7-->
-        <div class="modal fade" id="Colegio7Modal" aria-hidden="true" style="background-color: rgba(0, 0, 0, 0.678)">
-          <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Visita a la U.E. Colegio Manuel Piar</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body text-center">
-                <img src="../../assets/images/Colegio7.jpg">
-              </div>
-              <div class="modal-footer">
-              </div>
-            </div>
-          </div>
-        </div>
-      <img class="gallery-item" src="../../assets/images/Colegio8.jpg" data-toggle="modal" data-target="#Colegio8Modal">
-      <!--Modal Colegio8-->
-        <div class="modal fade" id="Colegio8Modal" aria-hidden="true" style="background-color: rgba(0, 0, 0, 0.678)">
-          <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Visita a la U.E. Colegio Manuel Piar</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body text-center">
-                <img src="../../assets/images/Colegio8.jpg">
-              </div>
-              <div class="modal-footer">
-              </div>
-            </div>
-          </div>
-        </div>
-      <img class="gallery-item" src="../../assets/images/Colegio9.jpg" data-toggle="modal" data-target="#Colegio9Modal">
-      <!--Modal Colegio9-->
-        <div class="modal fade" id="Colegio9Modal" aria-hidden="true" style="background-color: rgba(0, 0, 0, 0.678)">
-          <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Visita a la U.E. Colegio Manuel Piar</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body text-center">
-                <img src="../../assets/images/Colegio9.jpg">
-              </div>
-              <div class="modal-footer">
-              </div>
-            </div>
-          </div>
-        </div>
-      <img class="gallery-item" src="../../assets/images/Colegio4.jpg" style="margin-right: 0 !important" data-toggle="modal" data-target="#Colegio4Modal">
-      <!--Modal Colegio4-->
-        <div class="modal fade" id="Colegio4Modal" aria-hidden="true" style="background-color: rgba(0, 0, 0, 0.678)">
-          <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Visita a la U.E. Colegio Manuel Piar</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body text-center">
-                <img src="../../assets/images/Colegio4.jpg">
-              </div>
-              <div class="modal-footer">
-              </div>
-            </div>
-          </div>
-        </div>
+      <ng-container *ngFor="let image of project.images">
+        <img class="gallery-item ml-0" [src]="image" (click)="imageZoom(image)" >
+      </ng-container>
     </div>
-  </div>
+</div>
 
 <!--FIN GALERÍA-->
 
-</div>
-
-<!--Second project-->
-
-<div class="container-fluid p-3" style="width: 80vw; background-color: whitesmoke; border-radius: 4px; margin-top: 4vh; margin-bottom: 10vh">
-  <div class="row">
-    <div class="col-12 col-md-4">
-      <div class="col-12" style="margin: 1pc;">
-        <h5>Recolección de Basura - UNIMET</h5>
-        <h5>Trimestre 1718-02</h5>
-      </div>
-
-      <div class="col-12">
-        <img class="shadow-lg border border-dark project-image" src="../../assets/images/Uni1.jpg" >
-      </div>
-    </div>
-
-    <div class="col-12 col-md-8">
-      <div class="container">
-        <h3 style="margin-bottom: 5vh; margin-top: 10vh">Acerca del proyecto:</h3>
-        <h5 style="margin-bottom: 4vh">
-          Se llevó a cabo un proceso de reciclaje de materiales de los principales departamentos de las escuelas de la
-            Universidad Metropolitana. Durante esta jornada se realizaron labores de clasificación de los materiales 
-            para luego ser entregados a las compañias de reciclaje.
-        </h5>
-      </div>
-    </div>
-  </div>
-
-<!--GALERÍA-->
-
-<div class="col-lg-12 col-md-8">
-    <div class="gallery-container">
-      <img class="gallery-item" src="../../assets/images/Uni1.jpg" style="margin-left: 0 !important" data-toggle="modal" data-target="#Uni1Modal">
-      <!--Modal Uni1-->
-        <div class="modal fade" id="Uni1Modal" aria-hidden="true" style="background-color: rgba(0, 0, 0, 0.678)">
-          <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Recolección de Basura - UNIMET</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body text-center">
-                <img src="../../assets/images/Uni1.jpg">
-              </div>
-              <div class="modal-footer">
-              </div>
-            </div>
-          </div>
-        </div>
-      <img class="gallery-item" src="../../assets/images/Uni2.jpg" data-toggle="modal" data-target="#Uni2Modal">
-      <!--Modal Uni2-->
-        <div class="modal fade" id="Uni2Modal" aria-hidden="true" style="background-color: rgba(0, 0, 0, 0.678)">
-          <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Recolección de Basura - UNIMET</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body text-center">
-                <img src="../../assets/images/Uni2.jpg">
-              </div>
-              <div class="modal-footer">
-              </div>
-            </div>
-          </div>
-        </div>
-      <img class="gallery-item" src="../../assets/images/Uni3.jpg" data-toggle="modal" data-target="#Uni3Modal">
-      <!--Modal Uni3-->
-        <div class="modal fade" id="Uni3Modal" aria-hidden="true" style="background-color: rgba(0, 0, 0, 0.678)">
-          <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Recolección de Basura - UNIMET</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body text-center">
-                <img src="../../assets/images/Uni3.jpg">
-              </div>
-              <div class="modal-footer">
-              </div>
-            </div>
-          </div>
-        </div>
-      <img class="gallery-item" src="../../assets/images/Uni9.jpg" data-toggle="modal" data-target="#Uni9Modal">
-      <!--Modal Uni9 FIX-->
-        <div class="modal fade" id="Uni9Modal" aria-hidden="true" style="background-color: rgba(0, 0, 0, 0.678)">
-          <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Recolección de Basura - UNIMET</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body text-center">
-                <img src="../../assets/images/Uni9.jpg">
-              </div>
-              <div class="modal-footer">
-              </div>
-            </div>
-          </div>
-        </div>
-      <img class="gallery-item" src="../../assets/images/Uni10.jpg" data-toggle="modal" data-target="#Uni10Modal">
-      <!--Modal Uni10-->
-        <div class="modal fade" id="Uni10Modal" aria-hidden="true" style="background-color: rgba(0, 0, 0, 0.678)">
-          <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Recolección de Basura - UNIMET</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body text-center">
-                <img src="../../assets/images/Uni10.jpg">
-              </div>
-              <div class="modal-footer">
-              </div>
-            </div>
-          </div>
-        </div>
-      <img class="gallery-item" src="../../assets/images/Uni4.jpg" data-toggle="modal" data-target="#Uni4Modal">
-      <!--Modal Uni4-->
-        <div class="modal fade" id="Uni4Modal" aria-hidden="true" style="background-color: rgba(0, 0, 0, 0.678)">
-          <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Recolección de Basura - UNIMET</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body text-center">
-                <img src="../../assets/images/Uni4.jpg">
-              </div>
-              <div class="modal-footer">
-              </div>
-            </div>
-          </div>
-        </div>
-      <img class="gallery-item" src="../../assets/images/Uni8.jpg" data-toggle="modal" data-target="#Uni8Modal">
-      <!--Modal Uni8 FIX-->
-        <div class="modal fade" id="Uni8Modal" aria-hidden="true" style="background-color: rgba(0, 0, 0, 0.678)">
-          <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Recolección de Basura - UNIMET</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body text-center">
-                <img src="../../assets/images/Uni8.jpg">
-              </div>
-              <div class="modal-footer">
-              </div>
-            </div>
-          </div>
-        </div>
-      <img class="gallery-item" src="../../assets/images/Uni6.jpg" data-toggle="modal" data-target="#Uni6Modal">
-      <!--Modal Uni6-->
-        <div class="modal fade" id="Uni6Modal" aria-hidden="true" style="background-color: rgba(0, 0, 0, 0.678)">
-          <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Recolección de Basura - UNIMET</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body text-center">
-                <img src="../../assets/images/Uni6.jpg">
-              </div>
-              <div class="modal-footer">
-              </div>
-            </div>
-          </div>
-        </div>
-      <img class="gallery-item" src="../../assets/images/Uni5.jpg" style="margin-right: 0 !important" data-toggle="modal" data-target="#Uni5Modal">
-      <!--Modal Uni5 FIX-->
-        <div class="modal fade" id="Uni5Modal" aria-hidden="true" style="background-color: rgba(0, 0, 0, 0.678)">
-          <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Recolección de Basura - UNIMET</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body text-center">
-                <img src="../../assets/images/Uni5.jpg">
-              </div>
-              <div class="modal-footer">
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
-  </div>
-
-<!--FIN GALERÍA-->
+<app-image-modal  *ngIf="showZoom" [image]="srcImageZoom" (closeZoom)="closeZoom($event)" ></app-image-modal>
 
 </div>
+

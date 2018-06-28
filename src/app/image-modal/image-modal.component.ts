@@ -16,7 +16,6 @@ export class ImageModalComponent implements OnInit {
   }
 
   close(){
-    console.log("CLOSE")
     this.closeZoom.emit(true);
   }
 

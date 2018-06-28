@@ -49,9 +49,9 @@
         <img class="gallery-item ml-0" [src]="image" (click)="imageZoom(image)" >
       </ng-container>
     </div>
-  </div>
+</div>
 
-  <app-image-modal  *ngIf="showZoom" [image]="srcImageZoom" (closeZoom)="closeZoom($event)" ></app-image-modal>
+<app-image-modal  *ngIf="showZoom" [image]="srcImageZoom" (closeZoom)="closeZoom($event)" ></app-image-modal>
 
 <!--FIN GALERÍA-->
 

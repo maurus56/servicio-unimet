@@ -7,33 +7,57 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PastProjectsComponent implements OnInit {
 
+  
+  public showZoom:boolean = false;
+  public srcImageZoom: string ='';
+
   constructor() { }
 
   private projects = [
     { 
-      nombre: "Recuperación Parque Elefantico",
-      fecha: "10/4/2018",
-      lugar: "Caracas",
-      trimestre: "1718-3",
-      descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod elit eu turpis commodo, quis facilisis urna maximus. Aliquam erat volutpat. In sit amet neque tristique, elementum nisl maximus, vehicula justo. Donec at augue mi."
+      name: "Visita a la U.E. Colegio Manuel Piar",
+      period: "1718-02",
+      description: "Se realizó una visita a la Unidad Educativa Colegio Manuel Piar para la evaluación de las condiciones en las que se encontraban la infraestructura del lugar, para así poder realizar un diagnóstico acerca de sus necesidades.",
+      portrate:'../../assets/images/Colegio1.jpg',
+      images: [ 
+        '../../assets/images/Colegio2.jpg',
+        '../../assets/images/Colegio3.jpg',
+        '../../assets/images/Colegio4.jpg',
+        '../../assets/images/Colegio5.jpg',
+        '../../assets/images/Colegio6.jpg',
+        '../../assets/images/Colegio7.jpg',
+        '../../assets/images/Colegio8.jpg',
+        '../../assets/images/Colegio6.jpg',
+       ]
     },
     { 
-      nombre: "Trabajo con U.E. XXXX",
-      fecha: "01/2/2018",
-      lugar: "Caracas",
-      trimestre: "1718-2",
-      descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod elit eu turpis commodo, quis facilisis urna maximus. Aliquam erat volutpat. In sit amet neque tristique, elementum nisl maximus, vehicula justo. Donec at augue mi."
-    },
-    { 
-      nombre: "Trabajo con Cartonera Petare.",
-      fecha: "15/9/2017",
-      lugar: "Caracas",
-      trimestre: "1718-1",
-      descripcion: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod elit eu turpis commodo, quis facilisis urna maximus. Aliquam erat volutpat. In sit amet neque tristique, elementum nisl maximus, vehicula justo. Donec at augue mi."
+      name: "Jornada de Reciclaje - UNIMET.",
+      period: "1718-02",
+      description: "Se llevó a cabo un proceso de reciclaje de materiales de los principales departamentos de las escuelas de la Universidad Metropolitana. Durante esta jornada se realizaron labores de clasificación de los materiales para luego ser entregados a las compañias de reciclaje.",
+      portrate:'../../assets/images/Uni1.jpg',
+      images:[
+        '../../assets/images/Uni2.jpg',
+        '../../assets/images/Uni3.jpg',
+        '../../assets/images/Uni4.jpg',
+        '../../assets/images/Uni5.jpg',
+        '../../assets/images/Uni6.jpg',
+        '../../assets/images/Uni8.jpg',
+        '../../assets/images/Uni9.jpg',
+        '../../assets/images/Uni10.jpg',
+      ]
     },
   ]
 
   ngOnInit() {
+  }
+
+  imageZoom( img:string ){
+    this.srcImageZoom = img;
+    this.showZoom = true; 
+  }
+
+  closeZoom(){
+    this.showZoom = false;
   }
 
 }
