@@ -60,12 +60,12 @@ div.desc {
     position: relative;
     margin: 25px;
     padding-bottom: 50px;
-    box-shadow: 2px 2px 4px #bbb;
     border-top-right-radius: 4px;
     width: 250px;
     height: 250px;
     vertical-align: bottom;
-    background-position: top left;
+    cursor: pointer;
+    /*background-position: top left;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
 }
