@@ -21,7 +21,7 @@ export class PastProjectsComponent implements OnInit {
       portrate:'../../assets/images/Colegio1.jpg',
       images: [ 
         '../../assets/images/Colegio2.jpg',
-        '../../assets/images/Colegio3.jpg',
+        '../../assets/images/profesor.jpg',
         '../../assets/images/Colegio4.jpg',
         '../../assets/images/Colegio5.jpg',
         '../../assets/images/Colegio6.jpg',
