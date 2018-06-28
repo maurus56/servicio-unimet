@@ -3,8 +3,8 @@
     top: 15%;
     right: 0;
     left: 0;
-    width: 50vw;
-    height: 50vh;
+    width: 70vw;
+    height: 70vh;
     margin: 0 auto;
 }
 
@@ -22,4 +22,17 @@
     max-height: 80vh;
     max-width: 100%;
     text-align: center;
+}
+
+@media (max-width:767px){
+
+    .image-zoom-container {
+        width: 90vw;
+        height: 90vh;
+    }
+
+    .image-zoom {
+        max-height: 100vh;
+    }
+
 }
