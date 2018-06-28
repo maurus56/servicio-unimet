@@ -69,3 +69,16 @@ div.desc {
     background-repeat: no-repeat;
     background-size: cover; */
 }
+
+@media (max-width:767px){
+
+    .gallery-container {
+        height: 150px;
+    }
+
+    .gallery-item {
+        width: 150px;
+        height: 150px;
+    }
+
+}
