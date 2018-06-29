@@ -27,6 +27,7 @@ export class ActualProjectsComponent implements OnInit {
     "../../assets/images/parque12.jpg",
     "../../assets/images/parque13.jpg",
     "../../assets/images/parque14.jpg",
+    "../../assets/images/parque15.jpg",
   ]
 
   imageZoom( img:string ){

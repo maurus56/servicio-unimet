@@ -43,7 +43,6 @@ export class PastProjectsComponent implements OnInit {
         '../../assets/images/Uni6.jpg',
         '../../assets/images/Uni8.jpg',
         '../../assets/images/Uni9.jpg',
-        '../../assets/images/Uni10.jpg',
       ]
     },
   ]
