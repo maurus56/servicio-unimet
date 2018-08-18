@@ -1,0 +1,76 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12 text-center" style="padding: 2pc; margin-bottom: 1vh; margin-top: 1vh">
+      <h4 style="font-size: 5vh; color: whitesmoke;">
+        Nueva entrada
+      </h4>
+      <hr style="background-color: whitesmoke; margin-top: 4vh; width: 50vw">
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid pb-3" style="width: 80vw; background-color: whitesmoke; border-radius: 4px">
+  <div class="row">
+    <div class="col-12 col-md-4">
+      <div class="col-12" style="margin: 1pc;">
+        <!-- <h5>Parque La Mansión - Chacao</h5> -->
+        <input type="text" placeholder="Parque La Mansión - Chacao" style="width: 100%">
+        <!-- <h5>Trimestre 1718-03</h5> -->
+        <input type="text" placeholder="Trimestre 1718-03" style="width: 100%">
+      </div>
+
+      <div class="col-12 text-center">
+        <!-- <img  class="shadow-lg border border-dark project-image" src="../../assets/images/ParqueLaMansion.jpeg"> -->
+        <strong>Importa Imagenes</strong>
+        <hr>
+        <div class="box">
+          <input hidden type="file" name="file-2[]" id="file-2" class="inputfile inputfile-2" data-multiple-caption="{count} files selected"
+            multiple />
+          <label for="file-2">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+              <path d="M10 0l-5.2 4.9h3.3v5.1h3.8v-5.1h3.3l-5.2-4.9zm9.3 11.5l-3.2-2.1h-2l3.4 2.6h-3.5c-.1 0-.2.1-.2.1l-.8 2.3h-6l-.8-2.2c-.1-.1-.1-.2-.2-.2h-3.6l3.4-2.6h-2l-3.2 2.1c-.4.3-.7 1-.6 1.5l.6 3.1c.1.5.7.9 1.2.9h16.3c.6 0 1.1-.4 1.3-.9l.6-3.1c.1-.5-.2-1.2-.7-1.5z"
+              />
+            </svg>
+            <span>Elegir archivos</span>
+          </label>
+        </div>
+
+      </div>
+    </div>
+    <div class="col-12 col-md-8">
+      <div class="container">
+        <h3 style="margin-bottom: 5vh; margin-top: 10vh">Acerca del proyecto:</h3>
+        <!-- <h5 style="margin-bottom: 4vh">
+          ESPACIOS DE USO PÚBLICO: PROPUESTA DE UN PLAN DE MANEJO PARA EL PARQUE LA MANSIÓN
+        </h5> -->
+        <input type="text" placeholder="Acerca del proyecto" style="width: 100%">
+        <hr>
+        <textarea type="textbox" style="width: 100%" rows="10"></textarea>
+        <p style="font-size: 2vh">
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!--GALERÍA-->
+
+  <div class="col-12">
+    <div class="gallery-container">
+      <ng-container *ngFor="let image of gallery">
+        <img class="gallery-item ml-0" [src]="image" (click)="imageZoom(image)">
+      </ng-container>
+    </div>
+  </div>
+
+  <app-image-modal *ngIf="showZoom" [image]="srcImageZoom" (closeZoom)="closeZoom($event)"></app-image-modal>
+
+  <!--FIN GALERÍA-->
+
+  <div class="row text-center">
+    <div class="col-12 col-md-2 offset-md-10">
+      <button class="btn btn-primary">Guardar</button>
+    </div>
+  </div>
+
+
+</div>

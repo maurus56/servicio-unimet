@@ -7,15 +7,15 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class ImageModalComponent implements OnInit {
 
-  @Input() image:any; 
-  @Output() closeZoom = new EventEmitter() ;
+  @Input() image: any;
+  @Output() closeZoom = new EventEmitter();
 
   constructor() { }
 
   ngOnInit() {
   }
 
-  close(){
+  close() {
     this.closeZoom.emit(true);
   }
 

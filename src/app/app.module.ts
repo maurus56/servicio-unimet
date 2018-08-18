@@ -14,6 +14,8 @@ import { PastProjectsComponent } from './past-projects/past-projects.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
 import { WhoWeAreComponent } from './who-we-are/who-we-are.component';
 import { ImageModalComponent } from './image-modal/image-modal.component';
+import { LoginComponent } from './login/login.component';
+import { NewEntryComponent } from './components/new-entry/new-entry.component';
 
 
 @NgModule({
@@ -25,7 +27,9 @@ import { ImageModalComponent } from './image-modal/image-modal.component';
     PastProjectsComponent,
     ContactUsComponent,
     WhoWeAreComponent,
-    ImageModalComponent
+    ImageModalComponent,
+    LoginComponent,
+    NewEntryComponent
   ],
   imports: [
     AppRouting,
