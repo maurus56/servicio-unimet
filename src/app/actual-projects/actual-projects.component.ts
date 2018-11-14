@@ -15,8 +15,6 @@ export class ActualProjectsComponent implements OnInit {
   private gallery = [
     "../../assets/images/parque1.jpg",
     "../../assets/images/parque2.jpg",
-    "../../assets/images/parque3.jpg",
-    "../../assets/images/parque4.jpg",
     "../../assets/images/parque5.jpg",
     "../../assets/images/parque6.jpg",
     "../../assets/images/parque7.jpg",
@@ -28,6 +26,7 @@ export class ActualProjectsComponent implements OnInit {
     "../../assets/images/parque13.jpg",
     "../../assets/images/parque14.jpg",
     "../../assets/images/parque15.jpg",
+    "../../assets/images/parque16.jpg",
   ]
 
   imageZoom( img:string ){
